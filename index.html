@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        /* .nav{
+                background-color: gray;
+            } */
+        .image {
+            height: 90vh;
+        }
+
+        .nav {
+
+            height: 10vh;
+        }
+
+        .card img {
+            height: 30vh;
+        }
+        .dishes{
+            padding: 10px;
+            border:2px solid rgb(201, 196, 196);
+        }
+        .dishes:hover{
+            box-shadow: 5px 5px 2px gray;
+            margin-top: 2px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- navbar strt -->
+    <nav class="navbar navbar-expand-lg bg-primary nav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Resto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="react">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Delivery</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark text-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://sukhis.com/app/uploads/2017/06/Appetizers.jpg" class="d-block w-100 image" alt="...">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://content.jdmagicbox.com/comp/pune/b1/020pxx20.xx20.121030165605.d9b1/catalogue/one-way-foods-kothrud-pune-fast-food-restaurants-s4cqkkqafc.jpg"
+                    class="d-block w-100 image" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.dineout.co.in/blog/wp-content/uploads/2018/02/shutterstock_561626611-700x467.jpg"
+                    class="d-block w-100 image" alt="...">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <br>
+    <section class="container">
+        <h2 class="text-center">Dishes</h2>
+        <div class="row">
+            <div class="col-md-4 dish1">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 dish2">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTMiv3fZfpsMtaGosxcxa4bOUAG58GuNjVw&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 dish3">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">price 150</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTMiv3fZfpsMtaGosxcxa4bOUAG58GuNjVw&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card dishes" style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">price 150</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <h2 class="text-center">Pay Bill</h2>
+    <div class="container border border-dark">
+        <div style="padding: 15px;">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control border border-dark" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control border border-dark" aria-label="Amount (to the nearest dollar)" placeholder="password">
+        
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control border-dark" placeholder="Amount" aria-label="Username">
+        <span class="input-group-text border border-dark">.00</span>
+
+        <input type="text" class="form-control border-dark" placeholder="UPI ID" aria-label="Server">
+      </div>
+      <br>
+      <div style="text-align: center;">
+      <button class="btn btn-outline-dark w-50 center bg-primary">Pay</button>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-primary">
+        <div class="container">
+        <div class="row" style="padding: 10px;">
+            <div class="col-md-4">
+                <h3>Links</h3>
+                <p>Services</p>
+                <p>Dishes</p>
+                <p>Home</p>
+                <p>Delivery</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Important Links</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Order</p>
+                <p>Home Delivery</p>
+            </div>
+            <div class="col-md-4">
+                <h3>follow us</h3>
+               <p><i  class="fa-brands fa-facebook fa-2x"></i></p> 
+               <p><i class="fa-brands fa-twitter fa-2x"></i></p> 
+                <p><i class="fa-brands fa-youtube fa-2x"></i></p>
+                <p><i class="fa-brands fa-square-instagram fa-2x"></i></p>
+                
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2bc1922da0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
