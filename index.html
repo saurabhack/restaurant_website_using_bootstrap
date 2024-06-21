@@ -29,12 +29,32 @@
         .dishes{
             padding: 10px;
             border:2px solid rgb(201, 196, 196);
-        }
-        .dishes:hover{
+            /* position: absolute; */
+         }
+        /*.dishes:hover{
             box-shadow: 5px 5px 2px gray;
             margin-top: 2px;
+        } */
+        .lower{
+            position: absolute;
         }
-        
+        .dishes:hover{
+            transform:rotateY(180deg) ;
+            transition: all ease 2s;
+         }
+         .card{
+            position: relative;
+            transition: transform 1500ms;
+            transform-style: preserve-3d;
+         }
+         #lower , #upper{
+            position:absolute;
+            backface-visibility: hidden;
+         }
+         #lower{
+            transform: rotateY(180deg);
+         }
+        /*   */
     </style>
 </head>
 
@@ -113,45 +133,85 @@
         <h2 class="text-center">Dishes</h2>
         <div class="row">
             <div class="col-md-4 dish1">
-                <div class="card dishes" style="width:18rem">
+                <div class="card dishes "id="upper" class="upper"  style="width:18rem">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
-                        alt="" class="card-img-top">
+                        alt="" class="card-img-top upper">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
+                        alt="" class="card-img-top lower"> -->
                     <div class="card-body">
                         <h5 class="card-title">Burger</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                        
+                        </div>
+                        
+                        <div id="lower" class="lower" class="col-md-12">
+                            <div class="card dishes" style="width:18rem">
+                            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
+                                alt="" class="card-img-top upper">
+                            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
+                                alt="" class="card-img-top lower"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Burger</h5>
+                                <p class="card-text">price 100</p>
+                                <a href="" class="btn btn-outline-dark">Buy Now</a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>            
+            <div class="col-md-4 dish2">
+                <div class="card dishes" id="upper"  style="width:18rem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTMiv3fZfpsMtaGosxcxa4bOUAG58GuNjVw&s"
+                        alt="" class="card-img-top upper">
+                    <div class="card-body">
+                        <h5 class="card-title">pao bhaji</h5>
+                        <p class="card-text">price 100</p>
+                        <a href="" class="btn btn-outline-dark">Buy Now</a>
+                    </div>
+                    <div id="lower">
+                        <div class="card dishes" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTMiv3fZfpsMtaGosxcxa4bOUAG58GuNjVw&s"
+                        alt="" class="card-img-top upper">
+                    <div class="card-body">
+                        <h5 class="card-title">pao bhaji</h5>
                         <p class="card-text">price 100</p>
                         <a href="" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4 dish2">
-                <div class="card dishes" style="width:18rem">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTMiv3fZfpsMtaGosxcxa4bOUAG58GuNjVw&s"
-                        alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger</h5>
-                        <p class="card-text">price 100</p>
-                        <a href="" class="btn btn-outline-dark">Buy Now</a>
-                    </div>
+                </div>
                 </div>
             </div>
 
             <div class="col-md-4 dish3">
-                <div class="card dishes" style="width:18rem">
+                <div class="card dishes" id="upper" style="width:18rem">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
-                        alt="" class="card-img-top">
+                        alt="" class="card-img-top upper">
                     <div class="card-body">
                         <h5 class="card-title">Pizza</h5>
                         <p class="card-text">price 150</p>
                         <a href="" class="btn btn-outline-dark">Buy Now</a>
                     </div>
+                    <div id="lower">
+                        <div class="card dishes" style="width:18rem">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
+                                alt="" class="card-img-top upper">
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza</h5>
+                                <p class="card-text">price 150</p>
+                                <a href="" class="btn btn-outline-dark">Buy Now</a>
+                            </div>
                 </div>
+                
+                </div>
+            </div>
             </div>
 
         </div>
         <br>
         <br>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-4">
                 <div class="card dishes" style="width:18rem">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPRl28o_-BbrK_gTubt5a55OO1b9Zc94MCg&s"
@@ -188,10 +248,17 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
     </section>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br>
     <h2 class="text-center">Pay Bill</h2>
     <div class="container border border-dark">
         <div style="padding: 15px;">
